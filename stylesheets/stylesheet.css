@@ -483,6 +483,18 @@ header h2 {
   margin: 0 auto;
 }
 
+#header-logo {
+  display: flex;
+  align-items: center;;
+
+}
+#open-response-logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
 #content-wrapper {
   padding-top: 30px;
   border-top: solid 1px #fff;
@@ -863,3 +875,24 @@ dl dd {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
 
+
+#system-architecture-diagram {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  /* Center the image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#splash-image {
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+  /* Center the image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

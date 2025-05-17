@@ -14,8 +14,13 @@
   <body>
     <header>
       <div class="inner">
-        <h1>Open-Response</h1>
-        <h2>Open-Source Classroom Polling Software</h2>
+        <div id="header-logo">
+          <img id="open-response-logo" src="images/logo512.png" alt="Open-Response Logo" />
+          <div class="title">
+            <h1>Open-Response</h1>
+            <h2>Open-Source Classroom Polling Software</h2>
+          </div>
+        </div>
         <a href="https://github.com/OSU-MC/Open-Response" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
@@ -24,26 +29,191 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>About</h1>
-          <p>The Open-Source Classroom Polling Project seeks to simplify the interactive side of the educational experience, through the development of a free-to-use web-based polling system. Addressing the shortcomings of existing polling software, this project emphasizes affordability, responsiveness, and enhanced interactive capabilities suitable for today’s classrooms. The app aims to deliver a solution that fosters real-time engagement, collaborative learning, and seamless integration with educational platforms.</p>
-        
-          <h1>Addressing Key Issues</h2>
-          <h2>For Students</h3>
-          <p>Students often face additional costs for polling software that is outdated and lacks necessary features. Our solution is affordable, user-friendly, and compatible with various devices, ensuring seamless participation in classroom activities.</p>
-          <h2>For Instructors</h3>
+          <p>The Open-Source Classroom Polling Project seeks to simplify the interactive side of the educational experience, through the development of a free-to-use web-based polling system. Addressing the shortcomings of existing polling software, this project emphasizes affordability, responsiveness, and enhanced interactive capabilities suitable for today's classrooms. The app aims to deliver a solution that fosters real-time engagement, collaborative learning, and seamless integration with educational platforms.</p>
+
+          <figure class="splash">
+            <img id="splash-image" src="images/live-lecture-prototype.png" alt="Open-Response Lecture Prototype Screenshot"/>
+            <figcaption><strong>Figure 1</strong>. Screenshot of Open Response's Student Question Answering Interface.</figcaption>
+          </figure>
+
+          <h1>A Development in Progress</h1>
+          <p> This project is being developed as part of the <a href="https://engineering.oregonstate.edu/EECS/alumni-industry/student-engagement/Capstone">Oregon State University Copmuter Science Capstone Senior Projects</a> Program.  Originally launched in 2021 by a team of six students, the project has since undergone multiple iterations and continuous enhancements.</p>
+          <h2> Project Timeline and Status</h2>
+          <p>The platform is on track for real-world deployment in the 2025-2026 academic year. As of June 2025, core functionality is complete, with the following milestones remaining:</p>
+          <ul>
+            <li>Implementation of course roster management and email notification systems.</li>
+            <li>Expansion of supported question types beyond multiple choice and multiple answer.</li>
+            <li>Full compliance with WCAG 2.1 Level AA accessibility standards for use in classrooms as well as expanded mobile support.</li>
+            <li>Completion of test coverage for the accessibility, performance, unit testing, integration testing, and end to end testing suites.</li>
+            <li>Security enhancements to support FERPA compliance, including SSO integration and related safeguards.</li>
+            <li>Dashboards and tools for administrator users to manage and maintain the platform.</li>
+            <li>Additional quality-of-life improvements and polish.</li>
+          </ul>
+          <h2>2024-2025 Capstone Group</h2>
+          The 2024-2025 team made significant contributions across the system, including bug fixes and infrastructure improvements. Key accomplishments include:
+          <ul>
+            <li>Resolving technical debt stemming from a broken codebase, deprecated frontend frameworks, and fixing what was left by the previous group.</li>
+            <li>Redesigning and implementing an updated database schema, reworking entire backend REST API.</li>
+            <li>Refining the frontend interface to align with the latest Figma design prototypes.</li>
+            <li>Expanding the test suite to ensure robust validation across multiple components.</li>
+            <li>Deploying the system to an AWS Lightsail instance.</li>
+            <li>Establishing DevOps practices and GitHub Workflows for automated testing.</li>
+            <li>Enabling real-time responsiveness through WebSocket integration.</li>
+            <li>Enhancing course management capabilities for instructors.</li>
+          </ul>
+
+
+          <h1>Addressing Key Issues</h1>
+          <h2>For Students</h2>
+          <p>Students often face additional costs for polling software that is outdated and lacks necessary features. Our solution is affordable, user-friendly, and compatible with various devices, ensuring seamless participation in classroom~ activities.</p>
+          <h2>For Instructors</h2>
           <p>Instructors struggle with limited question formats and lack of real-time feedback mechanisms in current polling tools. Our software provides real-time feedback and supports diverse question formats, allowing educators to assess student understanding effectively and adjust lectures as needed.</p>
-          <h2>For Insitutions</h3>
+          <h2>For Insitutions</h2>
           <p>Institutions seek cost-effective technological solutions that integrate well with existing systems. Our open-source software is customizable, integrates seamlessly with Learning Management Systems like Canvas, and reduces the financial burden on both students and institutions.</p>
 
-          <h1>Why Choose Our Solution?</h2>
-          <p>Our classroom polling software is open-source, free, and highly customizable, making it a flexible and economical alternative to commercial options. It is designed to integrate seamlessly with LMS platforms, offering a responsive design that ensures a smooth user experience across various devices. This fosters greater engagement and participation in real-time.</p>
+          <h1>Why Choose Our Solution?</h1>
+          <p>
+            Open Response is a free, open-source classroom polling tool built to meet the practical needs of modern educators and students. Designed for ease of use and full LMS compatibility, it simplifies classroom interaction, boosts student engagement, and supports inclusive learning environments. Whether used in live sessions or asynchronously, it helps instructors focus less on logistics and more on teaching.
+            <br><br>
+            The platform includes the following key features:
+          </p>
+          <ul>
+            <li><strong>Role-Based Access for Instructors and Students</strong>. Ensures a secure and focused experience: instructors manage content and class structure, while students participate without distraction.</li>
+            
+            <li><strong>Streamlined Class & Lecture Tools</strong>. Instructors can quickly set up courses, organize sessions, and manage rosters, reducing prep time and making it easy to run both live and asynchronous lectures.</li>
+            
+            <li><strong>Interactive Question & Polling System</strong>. Enables instructors to ask questions that fit their teaching style, from quick polls to open-ended prompts, boosting student engagement during lectures.</li>
+            
+            <li><strong>Live Participation with Real-Time Feedback</strong>. Helps instructors gauge understanding on the fly while keeping students actively involved through instant, in-lecture interaction.</li>
+            
+            <li><strong>Built-In Analytics for Smarter Teaching</strong>. After each session, instructors can review response trends and participation data to identify areas for review or follow-up.</li>
+            
+            <li><strong>Canvas Integration for Seamless Grading</strong>. Reduces administrative overhead by letting instructors export participation and grades directly into Canvas via CSV exports.</li>
+            
+            <li><strong>Accessible and Mobile-Ready Design</strong>. Supports inclusive classrooms by meeting WCAG 2.1 AA accessibility standards and offering full functionality on mobile devices, ensuring all students can participate equally.</li>
+          </ul>
+          <h2>Comparison with Existing Solutions</h2>
+          <p>
+            While many classroom polling tools exist, few balance affordability, functionality, and openness. Open Response stands out by combining key strengths of commercial platforms, such as LMS support and flexible polling formats, while remaining free and open-source. The comparison below highlights how it addresses gaps left by other solutions.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th><strong>Platform</strong></th>
+                <th><strong>Free</strong></th>
+                <th><strong>Open Source</strong></th>
+                <th><strong>LMS Support</strong></th>
+                <th><strong>Advanced Features</strong></th>
+                <th><strong>Limitations</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Top Hat</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes (LMS Integration)</td>
+                <td>Yes</td>
+                <td>Paid access</td>
+              </tr>
+              <tr>
+                <td>Poll Everywhere</td>
+                <td>Limited</td>
+                <td>No</td>
+                <td>Yes (LMS Integration)</td>
+                <td>Yes</td>
+                <td>Free plan is restricted</td>
+              </tr>
+              <tr>
+                <td>Canvas Polls</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Canvas Only</td>
+                <td>No</td>
+                <td>Canvas-exclusive, limited features</td>
+              </tr>
+              <tr>
+                <td>Google Forms</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Basic</td>
+                <td>No LMS support, weak for large classes</td>
+              </tr>
+              <tr>
+                <td>Mentimeter</td>
+                <td>Limited</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Free plan limits, not classroom-focused</td>
+              </tr>
+              <tr>
+                <td>Kahoot!</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Engaging</td>
+                <td>No LMS integration, limited collaboration</td>
+              </tr>
+              <tr>
+                <td><strong>Open Response</strong></td>
+                <td><strong>Yes</strong></td>
+                <td><strong>Yes</strong></td>
+                <td><strong>Yes (CSV Import/Export)</strong></td>
+                <td><strong>Yes</strong></td>
+                <td><strong>None — designed to be accessible and comprehensive</strong></td>
+              </tr>
+            </tbody>
+          </table>
 
-          <h1>Documentation and Support</h2>
-          <h2>Where to Find Help</h3>
-          <p>Installation instructions and developer documentation is available in the project's <a href="https://github.com/OSU-MC/Open-Response/blob/dev/README.md">README.md</a> and at the <a href="https://github.com/OSU-MC/Open-Response/wiki">Open-Response Wiki</a>.</p>
-          <h2>Repository/Contact Information</h3>
+          <h1>Technical Implementation</h1>
+          <h2>Key Technologies Used</h2>
+          <p> 
+            The Open-Response system is built using a modern web stack, including: 
+            <ul>
+              <li><strong>Frontend</strong>: Vite with React.js for a responsive and dynamic user interface, ensuring a smooth user experience. </li> 
+              <li><strong>Backend</strong>: Node.js with Express.js for RESTful API, ensuring efficient data handling and communication.</li>
+              <li><strong>Database</strong>: MySQL for robust data storage and management, providing scalability and reliability.</li>
+              <li><strong>Real-Time Communication</strong>: WebSockets for real-time interaction between instructors and students during polling sessions.</li>
+              <li><strong>Caching</strong>: Redis for caching frequently accessed data, improving performance and reducing latency.</li> 
+              <li><strong>Containerization and Orchestration</strong>: Docker for containerization, ensuring consistent environments across development and production. Docker Swarm for orchestrating multi-container applications.</li>
+              <li><strong>Deployment</strong>: AWS Lightsail for hosting the application, ensuring high availability and performance.</li>
+          </p>
+          <h2>Architecture Overview</h2>
+          <p>Open Response uses a modular, containerized architecture to support scalability, reliability, and ease of maintenance. Each service runs in its own Docker container, enabling smooth deployment, load balancing, and horizontal scaling as classroom usage grows. The following diagram illustrates the system's key components and their interactions:</p>
+          <figure>
+            <img id="system-architecture-diagram" src="images/systemArchitectureDiagram.png" alt="Architecture Diagram" />
+            <figcaption><strong>Figure 2.</strong> System architecture showing frontend, backend, and database layers under Docker Swarm orchestration.</figcaption>
+
+          </figure>
+          <p>The architecture is built for high concurrency and real-time interaction. Incoming user traffic is routed through a load balancer that distributes requests to containerized services managed by Docker Swarm. The Vite/React frontend communicates with two backend APIs: a REST API for standard HTTP requests and a WebSocket API for live classroom interactions. Backend services interact with a Redis cache for fast, transient data access and a MySQL database for persistent storage. This separation of concerns ensures scalable performance, low-latency updates, and easier maintenance as resource demands grow.</p>
+
+          <h2>Development Challenges and Solutions</h2>
+          <p>
+            Some of the key challenges encountered by the latest development team largely revolve around inhereted technical debt from earlier design decisions made by previous groups. These caused significant setbacks in the development process, delaying the project timeline and requiring extensive refactoring of the codebase. These issues have largely been resolved, but at the cost of less feature completion by the 2024-2025 team.<br><br>
+            Regardless, the larged obstacle faced by the team is a lack of sufficent development time. The project is being developed as part of a capstone course, and the team is limited to a single academic year to complete the project, while simultaneously balancing a normal credit workload. This has resulted in a lack of time to fully implement all features and test them thoroughly. The team has worked hard to prioritize the most important features and ensure that they are implemented correctly, but there is still remaining work to be done.
+          </p>
+
+          <h1>Documentation and Support</h1>
+          <h2>Where to Find Help</h2>
+          <p>Installation instructions and developer documentation is available in the project's <a href="https://github.com/OSU-MC/Open-Response/blob/dev/README.md">README.md</a> and at the <a href="https://github.com/OSU-MC/Open-Response/wiki">Open-Response Wiki</a>. Included in the wiki are instructions for accessing, downloading, and running the project locally, comprehensive documentation, and a user guide for instructors, students, and administrators.
+          </p>
+          <h2>Accessing and Running the Project</h2>
+          To install and run the project locally for development, follow the steps on the project's GitHub Repository <a href="https://github.com/OSU-MC/Open-Response/blob/development/README.md">README.md</a>. For institutions and school IT departments interested in self-hosting their own instance of Open-Response, the project is designed to be easily deployable on any server with Docker and Docker Compose installed. <br><br> For more information on deploying the project, please refer to the project's <a href="https://github.com/OSU-MC/Open-Response/blob/development/DEPLOYMENT.md">DEPLOYMENT.md</a> for instructions to set up a production instance of the project on AWS. You can still largely follow the same instructions to set up a local instance of the project, but you will need to make some changes to the configuration files to run it locally.
+          <h3>Installation Requirements</h3>
+          <p>To run the project locally for development, you will need to have the following software installed on your machine on preferrably a Linux-based operating system. The project has been tested on Ubuntu 22.04, but should work on any Linux-based operating system. The project has not been tested on Windows or MacOS, but should work with some modifications to the installation instructions. If you do not have access to a Linux-based operating system, consider using <a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL2</a> if on a Windows environment.</p>
+          <ul>
+            <li>Docker</li>
+            <li>Docker Compose</li>
+            <li>Node.js</li>
+            <li>MySQL</li>
+            <li>Redis</li>
+
+          <h2>Repository/Contact Information</h2>
           <p>Our GitHub repository contains the source code, documentation, and issue tracking for the project. Contributions from the open-source community are welcome and encouraged. For questions or additional information submit a <a href="https://github.com/OSU-MC/Open-Response/issues">GitHub Issue</a> or open a <a href="https://github.com/OSU-MC/Open-Response/discussions">Discussion</a>.</p>
 
-          <h1>Learn More</h2>
+          <h1>Learn More</h1>
           <p>To learn more about the project, its goals, and future developments, visit our <a href="https://github.com/OSU-MC/Open-Response">GitHub Repository</a> or reach out using the methods above.</p>
         </section>
 
@@ -54,15 +224,15 @@
           </a>
           <h1>Contributors and Project Alumni</h1>
           <h2>Author</h2>
-          <p><a href="https://github.com/ethatche">Evan Thatcher</a><br>thatchee@oregonstate.edu</p>
+          <p><a href="https://physics.oregonstate.edu/directory/evan-m-thatcher">Evan Thatcher</a><br><strong>OSU Senior Instructor I</strong><br>thatchee@oregonstate.edu</p>
           <h2>Contributors</h2>
           <h3>2024-2025</h3>
-          <p><a href="https://github.com/n8srumsey">Nathan Rumsey</a><br>rumseyn@oregonstate.edu</p>
-          <p><a href="https://github.com/baumannevan">Evan Baunman</a><br>baumanne@oregonstate.edu</p>
-          <p><a href="https://github.com/enjiwood">Nathaniel Wood</a><br>woodnath@oregonstate.edu</p>
-          <p><a href="https://github.com/sgoober">Sean Gibson</a><br>gibsosea@oregonstate.edu</p>
-          <p><a href="https://github.com/Sage-m">Sage Morgillo</a><br>morgills@oregonstate.edu</p>
-          <p><a href="https://github.com/SonnySideUp37">Tran Cong Son Nguyen</a><br>nguytra6@oregonstate.edu</p>
+          <p><a href="https://github.com/n8srumsey">Nathan Rumsey</a><br><strong>Backend, DevOps, and Testing</strong><br>nathan.s.rumsey@gmail.com</p>
+          <p><a href="https://github.com/baumannevan">Evan Baunman</a><br><strong>Frontend and Backend</strong><br>baumanne@oregonstate.edu</p>
+          <p><a href="https://github.com/enjiwood">Nathaniel Wood</a><br><strong>Backend and DevOps</strong><br>woodnath@oregonstate.edu</p>
+          <p><a href="https://github.com/sgoober">Sean Gibson</a><br><strong>Frontend and Backend</strong><br>gibsosea@oregonstate.edu</p>
+          <p><a href="https://github.com/Sage-m">Sage Morgillo</a><br><strong>Visual Design</strong><br>morgills@oregonstate.edu</p>
+          <p><a href="https://github.com/SonnySideUp37">Tran Cong Son Nguyen</a><br><strong>Frontend </strong><br>nguytra6@oregonstate.edu</p>
           <h3>2023-2024</h3>
           <p><a href="https://github.com/nilsstreedain">Nils Streedain</a><br>streedan@oregonstate.edu</p>
           <p><a href="https://github.com/Justin-Fernbaugh">Justin Fernbaugh</a><br>fernbauj@oregonstate.edu</p>
@@ -82,7 +252,7 @@
           <p><a>Maxime Roger Desmet Vanden Stock</a><br></p>
           <p><a>Oyebolaji Akinyemi</a><br></p>
           
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+          <small>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</small>
         </aside>
       </div>
     </div>
